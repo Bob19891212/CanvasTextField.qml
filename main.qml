@@ -82,7 +82,7 @@ ApplicationWindow {
             if(event.key === Qt.Key_Backspace) {
                 // console.log("back")
 
-                text = text.substring(0,cursorPosition) + text.substring(cursorPosition+1,text.length);
+                text = text.substring(0,cursorPosition-1) + text.substring(cursorPosition,text.length);
 
                 cursorPosition > 0 ? cursorPosition-- : 1;
 
